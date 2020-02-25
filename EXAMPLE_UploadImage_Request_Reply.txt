@@ -1,0 +1,38 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v11="http://fedex.com/ws/uploaddocument/v11">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v11:UploadImagesRequest>
+         <v11:WebAuthenticationDetail>
+            <v11:ParentCredential>
+               <v11:Key>INPUT YOUR INFORMATION</v11:Key>
+               <v11:Password>INPUT YOUR INFORMATION</v11:Password>
+            </v11:ParentCredential>
+            <v11:UserCredential>
+               <v11:Key>INPUT YOUR INFORMATION</v11:Key>
+               <v11:Password>INPUT YOUR INFORMATION</v11:Password>
+            </v11:UserCredential>
+         </v11:WebAuthenticationDetail>
+         <v11:ClientDetail>
+            <v11:AccountNumber>INPUT YOUR INFORMATION</v11:AccountNumber>
+            <v11:MeterNumber>INPUT YOUR INFORMATION</v11:MeterNumber>
+         </v11:ClientDetail>
+         <v11:TransactionDetail>
+            <v11:CustomerTransactionId>UploadImagesRequest_v11</v11:CustomerTransactionId>
+         </v11:TransactionDetail>
+         <v11:Version>
+            <v11:ServiceId>cdus</v11:ServiceId>
+            <v11:Major>11</v11:Major>
+            <v11:Intermediate>0</v11:Intermediate>
+            <v11:Minor>0</v11:Minor>
+         </v11:Version>
+         <v11:Images>
+            <v11:Id>IMAGE_1</v11:Id>
+            <v11:Image>R0lGODlhvAIyAPcAAJiYmP///2UBmMbGxoxAsrapvOPj49fX1613yO7q7/r6+/Pz8/n2+9e85PXv+ejZ8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAAvAIyAAAI/wADCBxIsKDBgwgTKlzIsKHDhxAjSpxIsaLFixgzatzIsaPHjyBDihxJsqTJkyhTqlzJsqXLlzBjypxJs6bNmzhz6tzJs6fPn0CDCh1KtKjRo0iTKl3KtKnTp1CjSp1KtarVq1izat3KtavXr2DDih1LtqzZs2jTql3Ltq3bt3Djyp1Lt67du3jz6t3Lt6/fv4ADCx5MuLDhw4gTK17MuLHjx5AjS55MubLly5gza97MubPnz6BDi67LwIHp06hTmxZZOjUDBbBjy56tYLTt24QF6N7Nu/duBiF9CwBAvLjx48Rr417OPK/w57+D+0ZO3bjy5tizv4UOHThI4dXDX//XTr58We7PvX8EH576ePPw429FL1y9R/btj7+Xz79/VPq+2dcRfvkVt59/CCZ4FIC9CcgRgQUCcKCCFFbY03MsQVichRx2WBSGK2lInIcklsgTiA4x8MCKDkB0GkEiAmDijDTOhKECDOSoo30PIEBAbwQg0IBCDfi4W5AJBBAjbbG9xmRCTE5Y45RTMqgbAQ8EwAAC6GFp0AM/PtdAjOENUN0BBhlQAHVoUunmm1bq9oADYdI35EBjxqlbhMYxsCZ1BhCUQHUDvGkolXo2UCeAWQbwgJ678bmhAn8iF2gACxB66KY06rnokQgYCWRtn1opaXIBDFrdApRSV4CUnMb/iiCkvt2pJZe9NZCnb0IWUGqkpyqnKnIFVGpcAQ7KquystO5m60CfEvDrswU8d6qEAxlw6gLLdkshigUJd9CvvBr067XjHcBnkt626x+4Az3arHDsErQrb9U9ZGZ+l7rrb3zwCnTvvFceJG9v+erbXpv/NlxewAEMTDABByUQY0TGGleowxxrB7HE81L85cUPqRtevx2nfBvEBx+p2svV+tZiQSAn3JC2+dWr8s6gQcxAqTMr1PJuCJhL8kHjDZsftwklcMABOvMsNWMQB4Arb0UTBGZvovZWAEFXIxzsQJnyiSxCBwzw9AAbT+12YlUPfWUDCSSgKK8gCxBk19ONjI1pxsQBHvh+CQxgANuHM/z24oNVbbWnDihALn3oBtAqsQqYjFzbAxme+AELcM746H45Lnmcd8rNYOX7Iseu5seJ7vkABRiggOik5+6cuAn9zOCzeR9JZr6tH6dz8RoT9LQBUB9wuO7Q6+X4QDFD5yXN5GI5PHXIF4eyQN0Tx/DtAyQQegFMR68+WAEBADs=</v11:Image>
+         </v11:Images>
+      </v11:UploadImagesRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Reply:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><SOAP-ENV:Body><UploadImagesReply xmlns="http://fedex.com/ws/uploaddocument/v11"><HighestSeverity>SUCCESS</HighestSeverity><Notifications><Severity>SUCCESS</Severity><Source>cdus</Source><Code>0</Code><Message>Success.</Message><LocalizedMessage>Success.</LocalizedMessage></Notifications><TransactionDetail><CustomerTransactionId>UploadImagesRequest_v11</CustomerTransactionId></TransactionDetail><Version><ServiceId>cdus</ServiceId><Major>11</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><ImageStatuses><Id>IMAGE_1</Id><Status>SUCCESS</Status></ImageStatuses></UploadImagesReply></SOAP-ENV:Body></SOAP-ENV:Envelope>

@@ -1,7 +1,8 @@
 import base64
 import os
 import requests
-
+from dotenv import load_dotenv
+load_dotenv()
 
 URL = os.environ.get("FEDEX_ENDPOINT", "https://ws.fedex.com:443/web-services")
 KEY = os.environ.get("FEDEX_KEY")

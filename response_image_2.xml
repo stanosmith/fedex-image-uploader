@@ -1,0 +1,28 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header/>
+    <SOAP-ENV:Body>
+        <UploadImagesReply xmlns="http://fedex.com/ws/uploaddocument/v11">
+            <HighestSeverity>SUCCESS</HighestSeverity>
+            <Notifications>
+                <Severity>SUCCESS</Severity>
+                <Source>cdus</Source>
+                <Code>0</Code>
+                <Message>Success.</Message>
+                <LocalizedMessage>Success.</LocalizedMessage>
+            </Notifications>
+            <TransactionDetail>
+                <CustomerTransactionId>UploadImagesRequest_v11</CustomerTransactionId>
+            </TransactionDetail>
+            <Version>
+                <ServiceId>cdus</ServiceId>
+                <Major>11</Major>
+                <Intermediate>0</Intermediate>
+                <Minor>0</Minor>
+            </Version>
+            <ImageStatuses>
+                <Id>IMAGE_2</Id>
+                <Status>SUCCESS</Status>
+            </ImageStatuses>
+        </UploadImagesReply>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
